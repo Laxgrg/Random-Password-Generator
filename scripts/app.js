@@ -18,12 +18,12 @@ const CHARACTERS = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
       return randomPassword;
   }
    function displayPasswords() {
-    const passwordOne = generateRandomPassword();
-    const passwordTwo = generateRandomPassword();
+    const PASSWORD_ONE = generateRandomPassword();
+    const PASSWORD_TWO = generateRandomPassword();
   
   //displaying password on the input field
-  document.querySelector('.display-generated-pw1').value = passwordOne;
-  document.querySelector('.display-generated-pw2').value = passwordTwo;
+  document.querySelector('.display-generated-pw1').value = PASSWORD_ONE;
+  document.querySelector('.display-generated-pw2').value = PASSWORD_TWO;
   } 
   //adding event listener to the "Generate Password" button
   document.querySelector('.generate-password').addEventListener('click', displayPasswords);
